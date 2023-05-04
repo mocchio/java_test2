@@ -5,6 +5,7 @@ public class Main {
     String text = "いつもお世話になっております。新規物件のご紹介です。";
     introduceOneself();
     email(title, address, text);
+    email(address, text);
   }
 
   // introduceOneselfメソッドの定義
@@ -21,6 +22,13 @@ public class Main {
   public static void email(String title, String address, String text) {
     System.out.println(address + "宛に以下のメールを送信しました。");
     System.out.println("件名：" + title);
+    System.out.println("本文：" + text);
+  }
+
+  // emailメソッドのオーバーロード
+  public static void email(String address, String text) {
+    System.out.println(address + "宛に以下のメールを送信しました。");
+    System.out.println("件名：無題");
     System.out.println("本文：" + text);
   }
 }
