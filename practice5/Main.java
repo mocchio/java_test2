@@ -6,6 +6,12 @@ public class Main {
     introduceOneself();
     email(title, address, text);
     email(address, text);
+
+    double triangleArea = calcTriangleArea(10.0, 5.0);
+    System.out.println("三角形の面積は" + triangleArea + "㎠");
+
+    double circleArea = calcCircleArea(5.0);
+    System.out.println("円の面積は" + circleArea + "㎠");
   }
 
   // introduceOneselfメソッドの定義
@@ -30,5 +36,15 @@ public class Main {
     System.out.println(address + "宛に以下のメールを送信しました。");
     System.out.println("件名：無題");
     System.out.println("本文：" + text);
+  }
+
+  // calcTriangleAreaメソッドの定義
+  public static double calcTriangleArea(double bottom, double height) {
+    return bottom * height / 2;
+  }
+
+  // calcCircleAreaメソッドの定義
+  public static double calcCircleArea(double radius) {
+    return radius * radius * 3.14;
   }
 }
