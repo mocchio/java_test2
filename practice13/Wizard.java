@@ -8,7 +8,7 @@ public class Wizard {
   // メソッドの定義
   public void heal(Hero h) {
     int basePoint = 10;
-    int recovPoint = (int)(basePoint * this.wand.power);
+    int recovPoint = (int)(basePoint * this.wand.getPower());
     h.setHp(h.getHp() + recovPoint);
     System.out.println(h.getName() + "のHPを" + recovPoint + "回復した！");
   }
