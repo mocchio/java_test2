@@ -1,23 +1,14 @@
-public abstract class TangibleAsset {
+public abstract class TangibleAsset extends Asset {
   // フィールドの設定
-  String name;
-  int price;
   String color;
 
   // コンストラクタの設定
   public TangibleAsset(String name, int price, String color) {
-    this.name = name;
-    this.price = price;
+    super(name, price);
     this.color = color;
   } 
 
   // メソッドの設定
-  public String getName() {
-    return this.name;
-  }
-  public int getPrice() {
-    return this.price;
-  }
   public String getColor() {
     return this.color;
   }
