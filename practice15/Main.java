@@ -12,5 +12,11 @@ public class Main {
     for (String num : numbers) {
       System.out.print(num + "->");
     }
+
+    // 文字列検索
+    File f = new File();
+    f.setFolder("c:¥user¥");
+    f.setFile("readme.txt");
+    System.out.println(f.getFolder() + f.getFile());
   }
 }
