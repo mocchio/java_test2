@@ -11,5 +11,14 @@ public class Main {
     for (Hero h : heros) {
       System.out.println(h.getName());
     }
+
+    // LinkedHashMapの利用
+    Map<Hero, Integer> scores = new LinkedHashMap<>();
+    scores.put(h1, 3);
+    scores.put(h2, 7);
+    for (Hero key : scores.keySet()) {
+      int value = scores.get(key);
+      System.out.println(key.getName() + "が倒した敵=" + value);
+    }
   }
 }
